@@ -1,0 +1,40 @@
+.header {
+    z-index: 8000;
+    width: 100%;
+    height: 48px;
+    border-bottom: 1px solid #D5D8DD;
+    background-color: white;
+    position: fixed;
+    &_container {
+        font-family: 'Open Sans', sans-serif;
+        display: flex;
+        justify-content: space-between;
+        gap: 25px;
+        padding: 8px 16px;
+    }
+
+    &_flex_menu {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        gap: 8px;
+    }
+}
+
+.personal_cabinet {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    gap: 8px;
+    color: #2E3238;
+    font-size: 14px;
+    margin-left: 8px;
+    margin-right: 4px;
+}
+
+.header_settings {
+    border: 1px solid #D5D8DD;
+    width: 32px;
+    height: 32px;
+    border-radius: 4px;
+}

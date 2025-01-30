@@ -1,0 +1,15 @@
+.ul_list {
+    display: block;
+    flex-direction: column;
+    color: #2E3238;
+    font-size: 14px;
+    height: 100%;
+}
+
+.list_item {
+    display: flex;
+    gap: 8px;
+    padding: 10px 16px;
+    align-items: center;
+    cursor: pointer;
+}

@@ -1,0 +1,32 @@
+.input {
+    color: #2E3238;
+    width: 100%;
+    margin-right: 4px;
+}
+
+.input::placeholder {
+    color: #ABB1BA;
+}
+
+.input_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid;
+    border-color: #D5D8DD;
+    border-radius: 4px;
+    font-size: 14px;
+    padding: 8px;
+    height: 32px;
+    &_icon {
+        object-fit: contain;
+    }
+}
+
+.input-large {
+    width: 296px;
+}
+
+.input-small {
+    width: 208px;
+}

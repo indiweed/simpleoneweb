@@ -1,0 +1,111 @@
+.main_edit {
+    &_container {
+        //transition: padding-right 0.05s ease;
+        padding-right: 73px;
+        font-family: 'Open Sans', sans-serif;
+        position: fixed;
+        z-index: 3000;
+        background-color: white;
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+        height: 64px;
+        gap: 8px;
+
+        &.scrolled {
+            box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.04);
+            width: 100%;
+        }
+
+        &.open {
+            //transition: padding-right 0.3s ease;
+            padding-right: 353px;
+        }
+    }
+
+    &_left {
+        padding-left: 16px;
+        display: flex;
+        align-items: center;
+        gap: 16px;
+
+        &_title {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 20px;
+            font-weight: 400;
+            color: #2E3238;
+            cursor: default;
+        }
+
+        &_button {
+            font-family: 'Open Sans', sans-serif;
+            font-size: 14px;
+            font-weight: 600;
+            color: #2E3238;
+            width: 82px;
+            height: 32px;
+            border: 1px solid #D5D8DD;
+            border-radius: 4px;
+            padding: 6px 12px;
+        }
+    }
+
+    &_right {
+        display: flex;
+        gap: 4px;
+        width: 268px;
+
+        &_save_button {
+            width: 101px;
+            height: 32px;
+            border-radius: 4px;
+            background-color: #0078CF;
+            color: white;
+            font-size: 14px;
+            font-weight: 600;
+        }
+
+        &_save_exit {
+            width: 163px;
+            height: 32px;
+            border: 1px solid #D5D8DD;
+            border-radius: 4px;
+            font-size: 14px;
+            color: #2E3238;
+            font-weight: 600;
+        }
+    }
+}
+
+@media (max-width: 767px) {
+
+    .main_edit {
+        &_container {
+            padding-right: 16px;
+            height: 64px;
+            &.open {
+                padding-right: 16px;
+            }
+        }
+        &_right {
+            display: none; 
+        }
+        &_left {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            &_title {
+                color: #5C6470;
+                font-family: 'Open Sans', sans-serif;
+                font-size: 14px;
+                font-weight: 600;
+                text-transform: uppercase;
+                line-height: 20;
+                height: max-content;
+            }
+        }
+    }
+}

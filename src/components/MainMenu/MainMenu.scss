@@ -1,0 +1,41 @@
+.main  {
+    //transition: padding-left 0.3s ease;
+    padding-top: 48px;
+    padding-bottom: 200px;
+    &_container {
+        display: flex;
+        flex-direction: column;
+        padding-left: 56px;
+    }
+    &_message{
+        padding-left: 16px;
+        padding-right: 16px;
+        padding-top: 64px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 32px;
+        color: #2E3238;
+    }
+}
+
+.main.open {
+    padding-left: 280px;
+}
+
+@media (max-width: 767px) {
+    .main {
+        &_container {
+            padding-left: 0px;
+        }
+        &.open {
+            padding-left: 0px;
+        }
+        &_message {
+            font-size: 20px;
+        }
+    }
+}

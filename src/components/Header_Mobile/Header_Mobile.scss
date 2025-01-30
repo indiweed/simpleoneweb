@@ -1,0 +1,15 @@
+.header {
+    &_container {
+        padding-left: 22px;
+        justify-content: space-between;
+        margin-left: 5px;
+    }
+    &_flex_menu {
+        display: flex;
+
+    }
+}
+
+.personal_cabinet {
+    margin: 0;
+}

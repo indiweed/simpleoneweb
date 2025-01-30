@@ -1,0 +1,19 @@
+.lable_icon {
+    padding-top: 2px;
+}
+
+.form {
+    &_ul {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 16px;      
+    }
+}
+
+.comments, .concordants {
+    flex-basis: 100%;
+}
+
+.form_ul.modal li{
+    flex-basis: 100%;
+}

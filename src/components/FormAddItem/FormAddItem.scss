@@ -1,0 +1,102 @@
+.form_add{
+    &_label {
+        font-family: 'Open Sans', sans-serif;
+        font-size: 14px;
+        font-weight: 600;
+        color: #2E3238;
+    }
+    &_item_container {
+        display: flex;
+        flex-wrap: nowrap;
+    }
+    
+    &_border {
+        position: relative;
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        gap: 4px;
+        border: 1px solid #D5D8DD;
+        border-radius: 4px;
+        background-color: #fcfcfd;
+        flex-grow: 1;
+        min-height: 32px;
+        margin-top: 8px;
+        padding: 4px 8px 4px 6px;
+        gap: 6px;
+    }
+    
+    &_input {
+        &_container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 4px;
+            width: 96%;
+        }
+
+        &_span_wrap {
+            padding: 2px 8px;
+            font-size: 14px;
+            font-weight: 400;
+            color: #2E3238;
+            border: 1px solid #99D5FF;
+            border-radius: 4px;
+            background-color: #E5F4FF;
+        } 
+        
+    }
+    &_item_label {
+        font-family: 'Open Sans', sans-serif;
+        font-size: 14px;
+        font-weight: 600;
+        color: #2E3238;
+        line-height: 20px;
+    }
+    &_buttons {
+        display: flex;
+        margin-top: 8px;
+        gap: 4px;
+        margin-left: 4px;
+    }
+}
+
+.clear_textarea {
+    position: absolute;
+    right: 8px;
+    min-width: 16px;
+    min-height: 16px;
+    
+}
+
+.input_item {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    gap: 8px;
+    padding: 2px 8px;
+    font-size: 14px;
+    font-weight: 400;
+    color: #2E3238;
+    border: 1px solid #99D5FF;
+    border-radius: 4px;
+    background-color: #E5F4FF;
+}
+
+.delete_btn {
+    width: 10px;
+    height: 10px;
+}
+
+.add_button {
+    width: 32px;
+    height: 32px;
+    border: 1px solid #D5D8DD;
+    border-radius: 4px;
+}
+
+.search_button {
+    width: 32px;
+    height: 32px;
+    border: 1px solid #D5D8DD;
+    border-radius: 4px;
+}

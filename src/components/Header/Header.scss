@@ -1,0 +1,21 @@
+@media (min-width: 768px) {
+    .header {
+        &_mobile {
+            display: none;
+        }
+        &_desktop {
+            display: inline;
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .header {
+        &_desktop {
+            display: none;
+        }
+        &_mobile {
+            display: inline;
+        }
+    }
+}

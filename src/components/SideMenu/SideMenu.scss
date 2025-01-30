@@ -1,0 +1,47 @@
+.sidemenu {
+    //transition: left 0.05s ease;
+    overflow-y: auto;
+    font-family: 'Open Sans', sans-serif;
+    position: fixed;
+    z-index: 1000;
+    width: 280px;
+    height: calc(100% - 48px);
+    top: 48px;
+    left: -280px;
+    border-right: 1px solid #D5D8DD;
+    padding-bottom: 150px;
+    &_search_container {
+        padding: 16px;
+        border-bottom: 1px solid #D5D8DD;
+        background-color: white;
+    }
+    &_search {
+        display: flex;
+        flex-wrap: nowrap;
+        text-align: center;
+        gap: 8px;
+    }
+    &_no_pin {
+        border: 1px solid #D5D8DD;
+        width: 32px;
+        height: 32px;
+        border-radius: 4px;
+    }
+    &_list_container {
+        background-color: #FCFCFD;
+    }
+}
+
+.sidemenu.open {
+    left: 56px;
+}
+
+@media (max-width: 767px) {
+    .sidemenu {
+        top: 0px;
+        z-index: 9000;
+    }
+    .sidemenu.open {
+        left: -280px;
+    }
+}

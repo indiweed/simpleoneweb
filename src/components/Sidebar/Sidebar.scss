@@ -1,0 +1,26 @@
+.sidebar {
+    width: 56px;
+    height: 100%;
+    padding-top: 48px;
+    position: fixed;
+    border-right: 1px solid #D5D8DD;
+    background-color: white;
+    z-index: 2000;
+    &_container {
+        padding: 16px;
+    }
+}
+
+.favorites_menu {
+    margin-top: 32px;
+}
+
+.sidemenu_icon.open {
+    src: url(../../images/sidebar_onclick.svg);
+}
+
+@media (max-width: 767px) {
+    .sidebar {
+        display: none;
+    }
+}
