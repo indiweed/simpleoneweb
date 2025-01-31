@@ -32,6 +32,8 @@ export default function Header_Desktop() {
                         src={Settings}
                         width={20}
                         height={20}
+                        width={18}
+                        height={18}
                         alt='Настройки'
                         />
                     </button>
