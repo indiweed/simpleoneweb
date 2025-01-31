@@ -3,7 +3,7 @@ import FormItem from '../FormItem/FormItem';
 import FormAddItem from '../FormAddItem/FormAddItem';
 
 interface FormList_props {
-    additionalClass: string;
+    additionalClass?: string;
 }
 
 export default function FormList({additionalClass}: FormList_props) {
