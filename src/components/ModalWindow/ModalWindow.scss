@@ -97,6 +97,12 @@ body.no-scroll {
     padding-top: 0px;
 }
 
+@media (max-width: 767px) {
+    .modal_window {
+        padding: 0px;
+    }
+}
+
 @media (max-width: 320px) {
     .modal_window_header_title {
         color: #5C6470;
