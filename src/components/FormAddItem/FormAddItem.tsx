@@ -22,7 +22,7 @@ export default function FormAddItem({ spanText, labelSpan, additionalClass }: Fo
                     <div className='form_add_input_container'>
                         {Array.isArray(spanText) ? (
                             spanText.map((text, index) => (
-                                <div key={index} className='input_item'>
+                                <div key={index} className='form_add_input_span_wrap arr_container'>
                                     <span>{text}</span>
                                     <button className='delete_btn'>
                                         <Image

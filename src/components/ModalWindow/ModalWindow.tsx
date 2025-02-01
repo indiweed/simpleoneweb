@@ -46,6 +46,14 @@ export default function ModalWindow({isOpen, onClose}: ModalWindow_props) {
                 <div className='modal_form_list'>
                     <FormList additionalClass='modal'/>
                 </div>
+                <div className='modal_buttons_mobile'>
+                    <button className='modal_window_save_button'>
+                        Сохранить
+                    </button>
+                    <button onClick={onClose} className='modal_window_cancel_button'>
+                        Отменить
+                    </button>
+                </div>
             </div>
         </div>
     )
